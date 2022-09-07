@@ -14,23 +14,40 @@
 <body>
     <main class="container">
         <header class="backgroundDisplay">
-
+            <div class="backOfCard">
+                <img src="./images/bg-card-back.png" alt="picture of reverse side of bank card" width="280px">
+                <div class="cvcNumbers">000</div>
+            </div>
+            <div class="frontOfCard">
+                <img src="./images/bg-card-front.png" alt="picture of front side of card" width="270px">
+                <div class="circles">
+                    <div class="bigCircle"></div>
+                    <div class="smallCircle"></div>
+                </div>
+                <div class="longCardNumber">
+                   <h3> 0000 0000 0000 0000</h3>
+                </div>
+                <div>
+                    <div class="cardHolderName"></div>
+                    <div class="expDate"></div>
+                </div>
+            </div>
         </header>
         <div class="form_section">
             <form action="" class="form_details">
-                <h3 class="formTitleText">CARDHOLER NAME</h3>
-                    <input type="text" placeholder="e.g. Jane Appleseed" class="cardHolderName input" required>
-                <h3 class="formTitleText">CARD NUMBER</h3>
-                    <input type="text" placeholder="e.g.1234 5678 9123 0000" class="cardNumber input" required>
-                <div class="smallerInputFieldArea">
+                <label for="cardHolderName" class="formTitleText">CARDHOLER NAME</label>
+                    <input type="text" placeholder="e.g. Jane Appleseed" class="cardHolderName input" id="cardHolderName" required>
+                <label for="" class="formTitleText">CARD NUMBER</label>
+                    <input type="text" placeholder="e.g.1234 5678 9123 0000" class="cardNumber input" id="cardNumber" required>
+                <div class="smallerInputFieldArea formTitleText">
                     <div class="cardDateInputSection">
-                        <h3 class="formTitleText">EXP.DATE (MM/YY)</h3>
-                            <input type="text" placeholder="MM" class="expDateYear input" required>
-                            <input type="text" placeholder="YY" class="expDateMonth input" required>
+                        <label for="date" class="formTitleText">EXP.DATE (MM/YY)</label>
+                            <input type="text" placeholder="MM" class="expDateYear input" id="date"  required>
+                            <input type="text" placeholder="YY" class="expDateMonth input" id="date" required>
                     </div>
                     <div>
-                        <h3 class="formTitleText">CVC</h3>
-                            <input type="text" placeholder="e.g. 123" class="cvc input" required>
+                        <label for="cvc" class="formTitleText">CVC</label>
+                            <input type="text" placeholder="e.g. 123" class="cvc input" id="cvc" required>
                     </div>    
                 </div>
                 <button class="confirm-btn">Confirm</button>
