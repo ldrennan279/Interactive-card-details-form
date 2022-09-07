@@ -1,0 +1,66 @@
+/* - White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%) */
+
+
+*{
+    margin: 0;
+    box-sizing: border-box
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundDisplay{
+    background: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    height:225px ;
+}
+
+.form_details{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.input{
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 15px;
+    margin: 10px 0px;
+}
+::placeholder{
+    color: hsl(270, 3%, 87%);
+    font-family: 'Space Grotesk', sans-serif;
+}
+.formTitleText{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+}
+.smallerInputFieldArea{
+    display: flex;
+
+}
+.cardDateInputSection{
+    width: 90%;
+}
+.expDateYear, .expDateMonth{
+    width: 45%;
+}
+.cvc{
+    width: 100%;
+}
+
+

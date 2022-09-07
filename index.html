@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Interactive card details form</title>
+</head>
+<body>
+    <main class="container">
+        <header class="backgroundDisplay">
+
+        </header>
+        <div class="form_section">
+            <form action="" class="form_details">
+                <h3 class="formTitleText">CARDHOLER NAME</h3>
+                <input type="text" placeholder="e.g. Jane Appleseed" class="cardHolderName input">
+                <h3 class="formTitleText">CARD NUMBER</h3>
+                <input type="text" placeholder="e.g.1234 5678 9123 0000" class="cardNumber input">
+                <div class="smallerInputFieldArea">
+                    <div class="cardDateInputSection">
+                        <h3 class="formTitleText">EXP.DATE (MM/YY)</h3>
+                        <input type="text" placeholder="MM" class="expDateYear input">
+                        <input type="text" placeholder="YY" class="expDateMonth input">
+                    </div>
+                    <div>
+                        <h3 class="formTitleText">CVC</h3>
+                        <input type="text" placeholder="e.g. 123" class="cvc input">
+                    </div>    
+                </div>
+                <button class="confirm-btn">Confirm</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
