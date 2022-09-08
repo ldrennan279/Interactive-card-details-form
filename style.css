@@ -37,13 +37,16 @@ body{
 }
 
 .cvcNumbers{
+    z-index: 1;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 213px ;
+}
+
+.cvcNumbersData{
     color: white;
     font-size: 12px;
     font-weight: 300;
-    z-index: 1;
-    position: absolute;
-    margin-top: 67px;
-    margin-left: 223px ;
 }
 
 /* front of card */
@@ -165,3 +168,93 @@ body{
     margin-top: 20px;
 }
 
+@media only screen and (min-width: 375px) {
+    
+    .container{
+        min-width: 376px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+/* Header */
+    .backgroundDisplay{
+        background: url(./images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backOfCard img, .frontOfCard img{
+        width: 450px;
+    }
+
+    .backOfCard{
+       margin-left: 490px ;
+       /* margin-top: 100px; */
+    }
+
+    .cvcNumbers{
+        margin-top: 110px;
+        margin-left: 365px;
+        font-size: 16px;
+    }
+
+    .frontOfCard{
+        width: 450px;
+        margin-left: 190px;
+        margin-top: -550px;
+    }
+
+    .circles{
+        margin-top: -226px;
+    }
+
+    .bigCircle{
+        width: 45px;
+        height: 45px;
+    }
+    .smallCircle{
+        margin-top: 11px;
+        width: 22px;
+        height: 22px;
+    }
+    .longCardNumber{
+        margin-top: 55px;
+    }
+    .longCardNumber h3{
+        font-size: 30px;
+    }
+    .cardDetails{
+        width: 450px;
+        margin: 0px;
+        padding: 20px 40px 0px;
+    }
+
+    .cardDetails h3{
+        margin: 0;
+        font-size: 14px;
+    }
+
+/* form section */
+
+    .form_section{
+        margin: 0 200px;
+        min-width: 380px;
+        max-width: 380px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .form_details{
+        min-width: 300px;
+        padding: 10px;
+    }
+  }
