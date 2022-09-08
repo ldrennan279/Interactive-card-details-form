@@ -39,27 +39,30 @@ body{
 .cvcNumbers{
     color: white;
     font-size: 12px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
     z-index: 1;
     position: absolute;
     margin-top: 67px;
     margin-left: 223px ;
 }
 
+/* front of card */
+
 .frontOfCard{
     z-index: 1;
     margin-top: -66px;
     margin-left: 5%;
+    width: 270px;
     display: flex;
     flex-direction: column;
 }
 
 .circles{
-    position: absolute;
     margin: 15px;
     width: 100px;
     display: flex;
     flex-direction: row;
+    margin-top: -136px;
 }
 
 .bigCircle{
@@ -81,16 +84,37 @@ body{
 }
 
 .longCardNumber{
-    position: absolute;
+    margin: 20px auto 10px;
+}
+
+.longCardNumber h3{
     color: white;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: lighter;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 300;
 }
+
+.cardDetails{
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
 }
+
+.frontCardText{
+    font-size: 9px;
+    font-weight: 300;
+    color: white;
+    margin: 5px 15px;
+}
+
+
 
 /* form */
 .form_section{
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .form_details{
@@ -111,6 +135,7 @@ body{
 }
 .formTitleText{
     margin-top: 15px;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     font-weight: lighter;
     color: hsl(278, 68%, 11%);

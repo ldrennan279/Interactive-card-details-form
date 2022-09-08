@@ -7,50 +7,71 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
     <title>Interactive card details form</title>
 </head>
 <body>
     <main class="container">
         <header class="backgroundDisplay">
+
             <div class="backOfCard">
                 <img src="./images/bg-card-back.png" alt="picture of reverse side of bank card" width="280px">
                 <div class="cvcNumbers">000</div>
             </div>
+
             <div class="frontOfCard">
+
                 <img src="./images/bg-card-front.png" alt="picture of front side of card" width="270px">
-                <div class="circles">
-                    <div class="bigCircle"></div>
-                    <div class="smallCircle"></div>
-                </div>
-                <div class="longCardNumber">
-                   <h3> 0000 0000 0000 0000</h3>
-                </div>
-                <div>
-                    <div class="cardHolderName"></div>
-                    <div class="expDate"></div>
-                </div>
-            </div>
+
+                    <div class="circles">
+                        <div class="bigCircle"></div>
+                        <div class="smallCircle"></div>
+                    </div>
+
+                    <div class="longCardNumber">
+                        <h3> 0000 0000 0000 0000</h3>
+                    </div>
+
+                    <div class="cardDetails">
+                        <div class="cardHolderName">    
+                            <h3 class="frontCardText">Jane Appleseed</h3> 
+                        </div>
+                        <div class="expDate"> 
+                            <h3 class="frontCardText">00/00</h3> 
+                        </div>
+                    </div>
+
         </header>
+
         <div class="form_section">
             <form action="" class="form_details">
+
                 <label for="cardHolderName" class="formTitleText">CARDHOLER NAME</label>
-                    <input type="text" placeholder="e.g. Jane Appleseed" class="cardHolderName input" id="cardHolderName" required>
+                    <input type="text" placeholder="e.g. Jane Appleseed" class="input" id="cardHolderName" required>
+
                 <label for="" class="formTitleText">CARD NUMBER</label>
                     <input type="text" placeholder="e.g.1234 5678 9123 0000" class="cardNumber input" id="cardNumber" required>
+
                 <div class="smallerInputFieldArea formTitleText">
+
                     <div class="cardDateInputSection">
+
                         <label for="date" class="formTitleText">EXP.DATE (MM/YY)</label>
                             <input type="text" placeholder="MM" class="expDateYear input" id="date"  required>
                             <input type="text" placeholder="YY" class="expDateMonth input" id="date" required>
+
                     </div>
                     <div>
+
                         <label for="cvc" class="formTitleText">CVC</label>
                             <input type="text" placeholder="e.g. 123" class="cvc input" id="cvc" required>
+
                     </div>    
                 </div>
+
                 <button class="confirm-btn">Confirm</button>
+                
             </form>
         </div>
     </main>
