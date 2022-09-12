@@ -22,9 +22,14 @@ function render(input, output){
     })
 }
 
-function charSeperation (){
-    render()
-        longCardNumber = cardNumber.replace
+function charSeperation(){
+    cardNumber.addEventListener("keyup", function(){
+        if(cardNumber.value.length > 0){
+            if(cardNumber.value.length % 4 == 0){
+                cardNumber.value += " "
+            }
+        }
+    })
 }
 
 render(cardHolderName, cardDetails)
