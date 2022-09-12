@@ -24,7 +24,7 @@ function render(input, output){
 
 function charSeperation (){
     let charSpace = render(cardNumber, longCardNumber)
-    return charSpace
+    return charSpace.toLocaleString("fr")
 }
 
 render(cardHolderName, cardDetails)
