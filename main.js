@@ -23,8 +23,8 @@ function render(input, output){
 }
 
 function charSeperation (){
-    let charSpace = render(cardNumber, longCardNumber)
-    return charSpace.toLocaleString("fr")
+    render()
+        longCardNumber = cardNumber.replace
 }
 
 render(cardHolderName, cardDetails)
