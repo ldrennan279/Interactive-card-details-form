@@ -168,6 +168,16 @@ body{
     margin-top: 20px;
 }
 
+.confirm-btn:hover, .confirm-btn:focus {
+    background-color: blueviolet;
+}
+.error{
+    font-size: 0.5rem;
+    color: orangered;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
 @media only screen and (min-width: 375px) {
     
     .container{

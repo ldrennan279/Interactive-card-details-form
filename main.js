@@ -4,6 +4,7 @@ let longCardNumber = document.getElementById("longCardNumber")
 let cvcNumbers = document.getElementById("cvcNumbers") 
 let mm = document.getElementById("mm")
 let yy = document.getElementById("yy")
+const frontOfCard = document.getElementById("frontOfCard")
 
 // input
 let cardHolderName = document.getElementById("cardHolderName")
@@ -11,7 +12,6 @@ let cardNumber = document.getElementById("cardNumber")
 let month = document.getElementById("mmDate")
 let year = document.getElementById("yyDate")
 let cvc = document.getElementById("cvcData")
-
 
 function render(input, output){
     input.addEventListener("keyup", function(){
@@ -23,12 +23,11 @@ function render(input, output){
 }
 
 function charSeperation(){
-    cardNumber.addEventListener("keyup", function(){
-        if(cardNumber.value.length > 0){
-            if(cardNumber.value.length % 4 == 0){
-                cardNumber.value += " "
-            }
-        }
+    cardNumber.addEventListener("keyup", function(e){
+        e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        longCardNumber.innerHTML = `
+            ${cardNumber.value}
+        `
     })
 }
 
@@ -38,4 +37,8 @@ render(cvc, cvcNumbers)
 render(month, mm)
 render(year, yy)
 
+// Error messages
 
+function error(){
+    
+}
