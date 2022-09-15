@@ -13,6 +13,8 @@ let month = document.getElementById("mmDate")
 let year = document.getElementById("yyDate")
 let cvc = document.getElementById("cvcData")
 
+// render functions to add information to Card front and back
+
 function render(input, output){
     input.addEventListener("keyup", function(){
         let cardInfo = output
@@ -21,6 +23,11 @@ function render(input, output){
         `
     })
 }
+
+render(cardHolderName, cardDetails)
+render(cvc, cvcNumbers)
+render(month, mm)
+render(year, yy)
 
 function charSeperation(){
     cardNumber.addEventListener("keyup", function(e){
@@ -31,14 +38,27 @@ function charSeperation(){
     })
 }
 
-render(cardHolderName, cardDetails)
 charSeperation()
-render(cvc, cvcNumbers)
-render(month, mm)
-render(year, yy)
 
-// Error messages
+// Error messages for feilds that are empty
 
-function error(){
-    
+let cardHolderError = document.getElementById("cardHolder-error")
+let cardNumberError = document.getElementById("cardNumber-error")
+let expError = document.getElementById("exp-error")
+let cvcError = document.getElementById("cvc-error")
+
+function error(input, errorId){
+    input.addEventListener("click", function(){
+        if(input.value === ""){
+            errorId.style.display = "block"
+        } else {
+            errorId.style.display = "none"
+        }
+    })
 }
+
+error(cardHolderName, cardHolderError)
+error(cardNumber, cardNumberError)
+error(month, expError)
+error(year, expError)
+error(cvc, cvcError)

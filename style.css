@@ -176,6 +176,9 @@ body{
     color: orangered;
     font-family: 'Space Grotesk', sans-serif;
 }
+#cardHolder-error, #cardNumber-error, #exp-error, #cvc-error{
+    display: none;
+}
 
 
 @media only screen and (min-width: 375px) {
