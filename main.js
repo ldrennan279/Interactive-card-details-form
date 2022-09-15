@@ -49,7 +49,7 @@ let cvcError = document.getElementById("cvc-error")
 
 function error(input, errorId){
     input.addEventListener("click", function(){
-        if(input.value === ""){
+        if(input.value == ""){
             errorId.style.display = "block"
         } else {
             errorId.style.display = "none"
