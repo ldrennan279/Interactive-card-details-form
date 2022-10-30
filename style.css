@@ -269,3 +269,14 @@ body{
         padding: 10px;
     }
   }
+/* Footer */
+  .homePagePic{
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+  }
+  .homePage{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
